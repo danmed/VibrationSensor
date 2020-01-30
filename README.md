@@ -16,7 +16,7 @@ Vibration Sensor using NodeMCU and Tasmota
 * Switch the module type to Generic
 * Set up MQTT and the Friendly Name
 * Paste below Template into the "Template" section of "Configure Other"
-  * {"NAME":"Generic","GPIO":[255,255,255,255,255,255,255,255,255,255,255,255,255],"FLAG":15,"BASE":18}
+  * ```{"NAME":"Generic","GPIO":[255,255,255,255,255,255,255,255,255,255,255,255,255],"FLAG":15,"BASE":18}```
   
 # Rule
 When this is activated it toggles instantly between motion and no motion.. To counter act that, you need to set up a rule to have it dish out an MQTT topic which stays on for a specified duration. Alter the 180 in the below rule to your spec (seconds) : 
