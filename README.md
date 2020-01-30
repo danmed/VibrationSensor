@@ -33,7 +33,7 @@ Now you will have an MQTT Topic stat/%topic%/motion which flicks ON and then 3 m
 
 ```YAML
 - platform: mqtt
-  name: "Motion
+  name: "Motion"
   state_topic: stat/tasmota_topic/motion
   payload_on: "ON"
   payload_off: "OFF"
