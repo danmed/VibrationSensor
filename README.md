@@ -21,7 +21,8 @@ Vibration Sensor using NodeMCU and Tasmota
 # Rule
 When this is activated it toggles instantly between motion and no motion.. To counter act that, you need to set up a rule to have it dish out an MQTT topic which stays on for a specified duration. Alter the 180 in the below rule to your spec (seconds) : 
 
-```SwitchMode1 1
+```
+SwitchMode1 1
 SwitchTopic 0
 Rule1 on switch1#state=1 do backlog publish stat/%topic%/motion ON; RuleTimer1 180 endon on Rules#Timer=1 do publish stat/%topic%/motion OFF endon
 Rule1 1
